@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пример страницы с разметкой</title>
+    <title>Пример страницы с реальными данными</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -36,69 +36,80 @@
             padding: 2px 5px;
             border-radius: 3px;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Добро пожаловать на страницу с разметкой</h1>
+        <h1>Добро пожаловать на страницу с реальными данными</h1>
         
-        <p>Это пример веб-страницы, которая демонстрирует различные элементы HTML-разметки.</p>
+        <p>Эта страница содержит примеры реальных данных, таких как текст, изображения, таблицы и формы.</p>
         
-        <h2>Заголовок второго уровня</h2>
-        <p>Этот раздел содержит текст с <span class="highlight">выделенным</span> фрагментом и ссылку на <a href="https://www.example.com">пример сайта</a>.</p>
+        <h2>О компании</h2>
+        <p>Наша компания <span class="highlight">TechSolutions</span> занимается разработкой инновационных программных решений для бизнеса. Мы работаем с 2010 года и помогаем нашим клиентам достигать их целей с помощью современных технологий.</p>
         
-        <h3>Заголовок третьего уровня</h3>
-        <p>Ниже представлено изображение:</p>
-        <img src="https://via.placeholder.com/800x400" alt="Пример изображения">
-        
-        <h2>Списки</h2>
-        <p>Пример маркированного списка:</p>
+        <h3>Наши услуги</h3>
         <ul>
-            <li>Первый пункт</li>
-            <li>Второй пункт</li>
-            <li>Третий пункт</li>
+            <li>Разработка веб-приложений</li>
+            <li>Мобильная разработка</li>
+            <li>Консалтинг в области IT</li>
+            <li>Поддержка и обслуживание</li>
         </ul>
         
-        <p>Пример нумерованного списка:</p>
-        <ol>
-            <li>Первый пункт</li>
-            <li>Второй пункт</li>
-            <li>Третий пункт</li>
-        </ol>
+        <h2>Наша команда</h2>
+        <p>Мы гордимся нашей командой профессионалов, которые работают над каждым проектом с максимальной отдачей.</p>
+        <img src="https://via.placeholder.com/800x400" alt="Наша команда">
         
-        <h2>Таблица</h2>
+        <h2>Примеры наших проектов</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Заголовок 1</th>
-                    <th>Заголовок 2</th>
-                    <th>Заголовок 3</th>
+                    <th>Название проекта</th>
+                    <th>Описание</th>
+                    <th>Год завершения</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Данные 1</td>
-                    <td>Данные 2</td>
-                    <td>Данные 3</td>
+                    <td>Система управления складом</td>
+                    <td>Автоматизация процессов учета и управления складскими запасами.</td>
+                    <td>2021</td>
                 </tr>
                 <tr>
-                    <td>Данные 4</td>
-                    <td>Данные 5</td>
-                    <td>Данные 6</td>
+                    <td>Мобильное приложение для доставки еды</td>
+                    <td>Приложение для заказа и доставки еды с функцией отслеживания заказа.</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Корпоративный портал</td>
+                    <td>Внутренний портал для управления задачами и коммуникации сотрудников.</td>
+                    <td>2023</td>
                 </tr>
             </tbody>
         </table>
         
-        <h2>Форма</h2>
+        <h2>Свяжитесь с нами</h2>
         <form>
             <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" placeholder="Введите ваше имя"><br><br>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required><br><br>
             
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Введите ваш email"><br><br>
+            <input type="email" id="email" name="email" placeholder="Введите ваш email" required><br><br>
             
             <label for="message">Сообщение:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" placeholder="Введите ваше сообщение"></textarea><br><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Введите ваше сообщение" required></textarea><br><br>
             
             <button type="submit">Отправить</button>
         </form>
